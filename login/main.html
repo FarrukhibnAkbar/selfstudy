@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Admin</title>
+	<style type="text/css">
+		table{
+			border-collapse: collapse;
+		}
+		th,td{
+			border: 2px solid black;
+			padding: 1rem;
+		}
+		tbody tr:nth-child(even){
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+	<h1>Items List</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+				<th>Time</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range.}}
+			   	<tr>
+			   		<td>{{ .Id }}</td>
+			   		<td>{{ .Firstname }}</td>
+			   		<td>{{ .Lastname }}</td>
+			   		<td>{{ .Age }} </td>
+			   		<td>{{ .NowTime }} </td>
+			   	</tr>
+			 {{ end }}
+		</tbody>
+	</table>
+
+</body>
+</html>
